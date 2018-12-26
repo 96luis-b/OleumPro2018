@@ -1,0 +1,513 @@
+/*
+
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Sarabun', sans-serif;
+font-family: 'B612', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+header .contentMenu{
+    width: 100%;
+    background: #4e94ab;
+}
+
+header .textos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    text-align: left;
+    
+}
+header .titulo{
+    font-family: 'Sarabun', sans-serif;
+    margin-top: 210px;
+    font-size: 80px;
+    width: 70%;
+    margin-left: 15%;
+    letter-spacing: 2px;
+}
+header .subtitulo{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    color:  rgba(255, 255, 255, 0.651);
+    margin-left: 15%;
+    letter-spacing: 2px;
+}
+
+
+header .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color:  transparent transparent #fff transparent;
+}
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+.sesgoabajoTextos{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color:  transparent transparent rgb(253, 97, 57) transparent;
+}
+.sesgoarribaGaleria{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: rgb(253, 97, 57) transparent transparent transparent;
+}
+
+
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+
+}
+.acerca-de .sobre-nosotros{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.sobre-nosotros{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600px;
+    color: #000;
+    letter-spacing: 2px;
+}
+.slogan{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.parrafo{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5spx;
+    width: 70%;
+    margin-left: 14%;
+}
+.acerca-de{
+    background: rgb(253, 97, 57);
+    text-align: center;  
+}
+.line{
+    background: #fff;
+    width: 10%;
+    height: 2%;
+    color: #fff;
+}
+
+.acerca-de .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 200px;
+    font-weight: 300;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 24px;
+}
+
+.galeria{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+   
+}
+.imagenes{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.imagenes img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.firstimg{
+    margin-top: 10%;
+}
+
+.centerimg{
+    margin-top: 3%;
+}
+
+
+.encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(218, 125, 4, 0.753);
+    border: 2px solid #fff;
+}
+.encima h2{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+.encima div{
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
+.cards{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.712);
+    border-radius: 10%;
+}
+
+
+.card img{
+    width: 150px;
+    height: 120px;
+
+   /* object-fit: cover; */
+    border-radius: 20%;
+}
+
+.fondo{
+    height: 780px;
+    position: relative;
+    background-color: #212529;
+   /* background-image: url(../img/sensores_y_medidores/3.png); */
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+
+.sesgoabajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.miembros .contenedor{
+    height: 600px;
+}
+
+.titulo-patrocinadores, .subtitulo-patrocinadores{
+    color: #fff;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.titulo-patrocinadores{
+    font-size: 56px;
+    margin-top: 160px;
+    letter-spacing: 2px;
+}
+
+.subtitulo-patrocinadores{
+    font-size: 24px;
+    font-weight: 300px;
+    margin-bottom: 54px;
+    letter-spacing: 1px;
+
+}
+.especial{
+    display: block;
+    color: #000;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.clientes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente{
+    width: 30%;
+}
+
+.cliente img{
+    width: 100%;
+}
+
+.buttonDownload{
+    width: 100%;
+    text-align: center;
+}
+
+
+ .download{
+    display: inline-block;
+    padding: 6px;
+    width: 200px;
+    font-weight: 300;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 24px;
+}
+
+
+footer{
+    background: #fff;
+    height: auto;
+}
+
+
+.titulo-footer, .subtitulo-footer{
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    font-size: 66px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.subtitulo-footer{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    color: #fff;
+    
+}
+
+input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background: rgba(253, 96, 57, 0.712);
+    margin-bottom: 16px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+}
+input[type="text"]::placeholder ,  input[type="email"]::placeholder, textarea::placeholder{ 
+    color: white;
+ }
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-top: 5px solid rgba(255,255,255,0.7);
+}
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(253, 96, 57, 0.712);
+    padding: 13px;
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: rgb(253, 97, 57);
+    width: 96px;
+}
+
+.footer .btn-contact{
+    margin-left: 450px
+}
+
+
+@media screen and (max-width: 900px){
+    .card{
+        width: 48%; 
+    }
+}
+
+@media screen and (max-width: 610px){
+    header .textos{
+        margin-top: 130px;
+    }
+    header .titulo{
+        font-size: 75px;
+    }
+
+    .none{
+        display: none;
+    }
+    .imagenes{
+        flex-grow: 1;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+   /* .fondo{
+        height: ;
+    }
+    */
+
+    .clientes{
+       
+    }
+    .cliente{
+        width: 100%;
+        height: 20%;
+        margin-bottom: 80px;
+
+    }
+    
+    .especial{
+        display: block;
+        color: #000;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 380px){
+
+    header .textos{
+        margin-top:100px;
+    }
+    header .titulo{
+        font-size: 65px;
+    }
+    header .subtitulo{
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+    .sobre-nosotros{
+        font-size: 46px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    .titulo-patrocinadores{
+        font-size: 46px;
+    }
+    .subtitulo-patrocinadores{
+        font-size: 20px;
+    }
+}
+
+
