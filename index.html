@@ -130,10 +130,10 @@
             <h2 class="titulo-footer">Contact us</h2>
             <h3 class="subtitulo-footer">We appreciate it very much</h3>
             <div class="footer">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter message..."></textarea>
+                <form id="send_mail" action="">
+                    <input type="text" name="" id="name" placeholder="Name">
+                    <input type="email" name="" id="email" placeholder="Email">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Enter message..."></textarea>
                    <!-- <input type="submit" value="Enviar"> -->
                     <button class="btn-contact btn1">SUBMIT</button>
                 </form>
@@ -141,5 +141,11 @@
         </div>
     </footer>
 
+
+
+
+    <script src="app/jquery-3.1.0.js" type="text/javascript"></script>   
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
