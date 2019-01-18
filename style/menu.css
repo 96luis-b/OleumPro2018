@@ -5,7 +5,7 @@ body{
 
  .content{
     width: 100%;
-    height: 50px;
+    height: 55px;
     background-color: #fff;
     display: block;
 }
@@ -16,8 +16,6 @@ body{
     display: none;
     width: 30px;
     height: 30px;
-    padding: 10px;
-    text-align: center;   
 }
  .labelMenu:hover{
     cursor: pointer;
@@ -80,22 +78,36 @@ body{
     
 
 
-@media (max-width:768px){
+@media only screen and (max-width:768px) and (min-width:620px) {
      .labelMenu{
         display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+    .imgMenu{
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        width: 8%;
+        height: 100%;
+        background: #000;
     }
 
     .menu{
         position: absolute;
         background: #000;
-        width: 25%;
+        width: 20%;
         margin-left: -70%;
         transition: all 0.5s;
         z-index: 1;
-        height: 32%;
+        height: 40.5%;
     }
 
     .menu ul{
+
         flex-direction: column;
     }
 
@@ -107,5 +119,19 @@ body{
         margin: 0;
     }
 
+    .logo{
+        width: 30%;
+        height: 60%;
+      
+    }
+
+
+}
+
+@media only screen and (max-width:1072px) and (min-width:769px) {
+
+    .contentLogo{
+        height: 130px;
+    }
 
 }

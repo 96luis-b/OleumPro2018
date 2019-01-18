@@ -1,5 +1,4 @@
 
-      console.log(email);
 
 (function(){
     emailjs.init("user_EGyMLxA34s0YlrWliR7p6");
@@ -19,7 +18,7 @@
    var service_id = "send_email";
  
    var template_id = "send_email";
-   myform.find("button").text("Sending...");
+   myform.find("button").text("SENDING...");
    let data = {
              message: message.value,
              subject: 'prueba',
@@ -32,11 +31,20 @@
    emailjs.send(service_id, template_id, data)
        .then(function(){ 
         alert("Sent!");
-        myform.find("button").text("Send");
+        myform.find("button").text("SEND");
       }, function(err) {
         alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-        myform.find("button").text("Send");
+        myform.find("button").text("SEND");
      });
  
    return false;
  });
+
+
+
+function downloadCatalog(){
+  console.log("descargando catalogo");
+    window.location.href = "doc/planilla (1).pdf"
+}
+
+downloadButton .onclick = downloadCatalog;
