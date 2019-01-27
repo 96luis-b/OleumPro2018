@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/animations.css">
     <link rel="stylesheet" href="style/dynamicScreen.css">
+    <link rel="stylesheet" href="./style/sliderImg.css">
 </head>
 
 <body>
@@ -33,12 +34,18 @@
         </div>
     </section>
 
-    <header>
+    <header id="header">
         <div class="textos">
             <h1 class="titulo">Wireless Automation Solution</h1>
             <h3 class="subtitulo">Industrial Internet of Thing (IIOT)</h3>
-           <!-- <a href="" class="boton">Suscribete</a> -->
+          <!--  <a href="" class="boton">Suscribete</a> -->
         </div>
+            <button onclick="slider(1)" class="bar btn btn1"></button>
+            <button onclick="slider(2)" class="bar btn btn1"></button>
+            <button onclick="slider(3)" class="bar btn btn1"></button>
+            <button onclick="slider(4)" class="bar btn btn1"></button>
+            <button onclick="slider(5)" class="bar btn btn1"></button>
+
         <div class="sesgoabajoTextos"></div>
     </header>
     <main>
@@ -149,6 +156,8 @@
 
     <script src="app/jquery-3.1.0.js" type="text/javascript"></script>   
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script src="app/app.js"></script>
+  <!--  <script src="app/app.js"></script> -->
+    <script src="app/download.js"></script>
+    <script src="./app/sliderImg.js"></script> 
 </body>
 </html>

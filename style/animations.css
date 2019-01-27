@@ -16,6 +16,7 @@
     z-index: 1;
     border-radius: 205px;
     font-weight: 700;
+    outline:none;
 }
 
 .btn-contact{
@@ -32,6 +33,7 @@
     z-index: 1;
     border-radius: 205px;
     font-weight: 700;
+    outline:none;
 }
 
 .btn1, .btn2{

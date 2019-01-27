@@ -1,0 +1,18 @@
+.navigation{
+  margin-top: 50%;
+    display: flex;
+    z-index: initial;
+}
+.contentBar{
+    margin-top: 45%;
+}
+
+.bar{
+    position: relative;
+    margin:8px;
+    top: 520px;
+    cursor: pointer;
+    width: 20px;    
+}
+
+

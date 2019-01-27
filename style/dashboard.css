@@ -34,6 +34,9 @@ header{
     overflow: hidden;
     color: #fff;
     text-align: center;
+    transition: .8s;
+    object-fit: cover;
+
 }
 
 /*
@@ -56,7 +59,7 @@ header .textos{
 header .titulo{
     font-family: 'Sarabun', sans-serif;
     margin-top: 210px;
-    font-size: 80px;
+    font-size: 75px;
     width: 70%;
     margin-left: 15%;
     letter-spacing: 2px;
@@ -73,8 +76,6 @@ header .subtitulo{
     letter-spacing: 2px;
     animation: textSubtitle 2.5s 1;
 }
-
-
 
 header .boton{
     display: inline-block;
